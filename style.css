@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway');
 
-
 .headPage {
 	width: 100%;
 	height: 100%;
+}
+
+.horizone {
+	background-color: black;
+	width: 100%;
+	height: 1px;
 }
 
 .starkName{
