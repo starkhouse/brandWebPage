@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Gruppo');
 
-.section{
+
+h1, h2, h3, h4, h5, h6, ul, li, body {
+	margin: 0px;
+}
+
+
+.section {
 	text-align: center;
 	font-size: 2em;
 }
 
-.horizone {
+.horizonLine {
 	background-color: black;
 	width: 100%;
 	height: 1px;
+}
+
+.wrapper {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .starkName{
@@ -17,18 +29,78 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-.starkSubName {
-	font-size: 2em;
-	text-align: center;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .slogan {
 	font-size: 1.2em;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.newMessage {
-
+.contents {
+	position: relative;
 }
+
+.st0 {
+	stroke-dasharray: 1000;
+	animation: draw-poly 5s linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes draw-poly {
+	to {
+		stroke-dashoffset: 1000;
+	}
+}
+
+.element-bg {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: 50px;
+	left: 50px;
+}
+
+.element-1 {
+	position: relative;
+	top: 200px;
+	left: 20px;
+	width: 30%;
+	font-style: 2em
+}
+
+
+
+
+
+.newMessageBox {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	right: 50px;
+	top: 50px;
+	text-align: center;
+	line-height: 100%;
+	vertical-align: middle;
+	background-color: black
+}
+
+.button-Message {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+	color: white;
+}
+
+.button-Message a,
+.button-Message a:link,
+.button-Message a:active,
+.button-Message a:visited,
+.button-Message a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+
+
