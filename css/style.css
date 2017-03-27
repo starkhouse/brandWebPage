@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Gruppo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Gruppo|notosansrk');
 
 
 h1, h2, h3, h4, h5, h6, ul, li, body {
@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	animation: draw-poly 5s linear;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
+	z-index: -10;
 }
 
 @keyframes draw-poly {
