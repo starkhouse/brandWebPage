@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Gruppo|notosansrk');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Gruppo');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 
 
 h1, h2, h3, h4, h5, h6, ul, li, body {
@@ -6,10 +9,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 }
 
 
-.section {
-	text-align: center;
-	font-size: 2em;
-}
+
+/* section 1 -- #page1 */
 
 .horizonLine {
 	background-color: black;
@@ -17,26 +18,81 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	height: 1px;
 }
 
-.wrapper {
+.centering {
 	position: relative;
-	top: 50%;
+	/*top: 50%;*/
 	transform: translateY(-50%);
+	z-index: 1;
 }
 
 .starkName{
-	font-size: 2.3em;
+	font-size: 6em;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
 
 .slogan {
-	font-size: 1.2em;
+	font-size: 3em;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.scrollDown {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-25%);
+	z-index: 100;
+}
+
+.scrollDown img {
+	width: 50px;
+}
+
+/* section 2 -- #page2 */
+
 .contents {
 	position: relative;
+}
+
+.paragraph {
+	position: relative;
+    /*top: 10%;*/
+    left: 10%;
+    width: 65%;
+	z-index: 1;
+}
+
+
+.paragraph h1 {
+	color: #DDDBD1;
+	font-size: 5em;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.paragraph h2{
+	color: white;
+	font-size: 4.5em;
+	font-family: 'Nanum Myeongjo';
+	font-weight: 400;
+}
+
+.paragraph p,
+.pop-layer ul {
+	color: black;
+	font-size: 2.5em;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.background-image {
+	position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, -30%);
+    z-index: 0;
 }
 
 .st0 {
@@ -44,21 +100,12 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	animation: draw-poly 5s linear;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
-	z-index: -10;
 }
 
 @keyframes draw-poly {
 	to {
 		stroke-dashoffset: 1000;
 	}
-}
-
-.element-bg {
-	position: absolute;
-	width: 200%;
-	height: 200%;
-	top: 50px;
-	left: 50px;
 }
 
 .element-1 {
@@ -69,39 +116,70 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-style: 2em
 }
 
-
-
-
-
 .newMessageBox {
 	position: fixed;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	right: 50px;
 	top: 50px;
 	text-align: center;
-	line-height: 100%;
+	line-height: 200%;
 	vertical-align: middle;
 	background-color: black
 }
 
-.button-Message {
-	position: relative;
+.newMessageBox a {
+	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translate(-50%, -50%);
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.2em;
+	font-size: 2em;
 	color: white;
 }
 
-.button-Message a,
-.button-Message a:link,
-.button-Message a:active,
-.button-Message a:visited,
-.button-Message a:hover {
+.newMessageBox a,
+.newMessageBox a:link,
+.newMessageBox a:active,
+.newMessageBox a:visited,
+.newMessageBox a:hover {
 	color: white;
 	text-decoration: none;
 }
 
+.pop-layer {
+	display:none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	/*border: 5px solid #3571B5;*/
+	z-index: 10;
+}
 
+.pop-layer h2, 
+.pop-layer ul {
+	color: black;
+	padding: 0 0 15px 0;
+	width: 450px;
+}
+
+.pop-container {
+	display: block;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 600px;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+}
+
+.closeBtn img {
+	position: fixed;
+	width: 150px;
+	height: 150px;
+	right: 50px;
+	top: 50px;
+}
 
