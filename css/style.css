@@ -77,13 +77,38 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-weight: 400;
 }
 
+.paragraph table {
+	min-width: 700px;
+}
+
 .paragraph p,
+.paragraph table,
 .pop-layer ul {
 	color: black;
 	font-size: 2.5em;
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
+.paragraph table {
+	margin: 5px;
+	padding: 5px;
+	height: 600px;
+}
+
+
+/*.paragraph tbody table*/ .leftCell {
+	border-right: 2px solid #DDDBD1;
+	padding-right: 15px;
+}
+
+/*.paragraph tbody table*/ .rightCell {
+	padding-left: 15px;
+}
+
+.leftCell,
+.rightCell {
+	border-bottom: 2px solid #DDDBD1;
+}
 
 .background-image {
 	position: absolute;
