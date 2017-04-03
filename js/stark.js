@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors:['page1', 'page2','page3'],
-		sectionsColor:['white', '#ADAFAA', 'grey'],
+		anchors:['page1', 'page2','page3',],
+		sectionsColor:['white', '#ADAFAA', '#8f918b'],
 		menu: '#topElements',
 		navigation: true,
 		navigationPosition: 'right',
