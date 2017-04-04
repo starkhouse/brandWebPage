@@ -93,7 +93,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .paragraph p,
 .paragraph table,
-.pop-layer ul {
+.pop-layer ul,
+.pop-layer li {
 	color: black;
 	font-size: 1.8em;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -196,10 +197,18 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	z-index: 10;
 }
 
-.pop-layer h2, .pop-layer ul {
+.pop-layer div {
+	position: absolute;
+
+	padding: auto;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.pop-container h2, .pop-container ul, .pop-container li {
 	color: black;
-	padding: 0 0 15px 0;
-	width: 450px;
+	padding: 0px 0px 20px 20px;
+	width: 90%;
 }
 
 .pop-container {
