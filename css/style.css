@@ -71,9 +71,10 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .paragraph {
 	position: relative;
-	/*top: 10%;*/
-	left: 10%;
-	width: 65%;
+    /*top: 10%;*/
+    left: 80px;
+    width: 70%;
+    margin-right: 80px;
 	z-index: 1;
 }
 
@@ -90,22 +91,42 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-weight: 400;
 }
 
-.paragraph p, .paragraph tbody, .pop-layer ul {
+.paragraph p,
+.paragraph table,
+.pop-layer ul {
 	color: black;
 	font-size: 1.8em;
 	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
 }
 
-.paragraph table {
-	margin: 5px;
-	padding: 5px;
-	height: 600px;
+.paragraph dt {
+	font-size: 1.8em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 400;
 }
 
-/*.paragraph table*/
-.leftCell {
+.paragraph dd {
+	font-size: 1.8em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
+
+}
+
+
+/*.leftCell {
 	border-right: 2px solid #DDDBD1;
+	padding-right: 15px;
 }
+
+.rightCell {
+	padding-left: 15px;
+}
+
+.leftCell,
+.rightCell {
+	border-bottom: 2px solid #DDDBD1;
+}*/
 
 .background-image {
 	position: absolute;
@@ -140,8 +161,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .newMessageBox {
 	position: fixed;
-	width: 150px;
-	height: 150px;
+	width: 10em;
+	height: 10em;
 	right: 50px;
 	top: 50px;
 	text-align: center;
@@ -219,3 +240,17 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
     transform: translateX(-50%);
     height: auto;
 }
+
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+
