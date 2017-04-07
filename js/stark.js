@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors:['page1', 'page2','page3',],
-		sectionsColor:['white', '#ADAFAA', '#8f918b'],
+		anchors:['page1', 'page2','page3','page4'],
+		sectionsColor:['white', '#AACAF9', 'white','#ADAFAA'],
 		menu: '#topElements',
 		navigation: true,
 		navigationPosition: 'right',
@@ -16,8 +16,6 @@ $(document).ready(function() {
 		console.log('hover');
 		$(this).animate({ bottom : 60 }).animate({ bottom : 50 });
 	});
-
-
 
 });
 

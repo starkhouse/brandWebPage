@@ -91,6 +91,13 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-weight: 400;
 }
 
+.paragraph h3 {
+	color: white;
+	font-size: 3em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 200;
+}
+
 .paragraph p,
 .paragraph table,
 .pop-layer ul,
@@ -244,10 +251,18 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 .para3 a img {
 	position: relative;
     width: 65%;
-    max-width: 300px;
+    max-width: 800px;
     left: 50%;
     transform: translateX(-50%);
     height: auto;
+}
+
+.banners img {
+	position: relative;
+    width: 55%;
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width: 640px) {
