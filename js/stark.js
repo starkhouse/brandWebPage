@@ -17,7 +17,36 @@ $(document).ready(function() {
 		$(this).animate({ bottom : 60 }).animate({ bottom : 50 });
 	});
 
+	screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+
+	if (screen.lockOrientationUniversal("landscape-primary")) {
+	  // orientation was locked
+	} else {
+	  // orientation lock failed
+	}
+
 });
+
+
+
+window.addEventListner('orientationchange', function(){
+	if(window.orientation == -90) {
+		document.getElementById('orient').className = 'orientright';
+	}
+
+	if(window.orientation == 90) {
+		document.getElementById('orient').className = 'orientleft';
+	}
+
+	if(window.orientation == 0) {
+		document.getElementById('orient').className = '';
+	}
+}, true);
+
+// function changeOrientation(event) {
+//     alert("Rotate");
+//     event.preventDefault();
+// }
 
 function layer_open(el){
 
