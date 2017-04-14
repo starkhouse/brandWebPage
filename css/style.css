@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 .centering {
 	position: relative;
 	/*top: 50%;*/
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 	z-index: 1;
 }
 
@@ -109,12 +110,18 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-weight: 200;
 }
 
-.paragraph p,
+.paragraph p {
+		color: black;
+	font-size: 2em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
+}
+
 .paragraph table,
 .pop-layer ul,
 .pop-layer li {
 	color: black;
-	font-size: 1.2em;
+	font-size: 2em;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
 }
@@ -252,8 +259,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .closeBtn img {
 	position: fixed;
-	width: 150px;
-	height: 150px;
+	width: 50px;
+	height: 50px;
 	right: 50px;
 	top: 50px;
 }
@@ -276,7 +283,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
     width: 55%;
     max-width: 750px;
     left: 50%;
-    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .banners:not(.web_1) img {
