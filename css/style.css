@@ -14,6 +14,16 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	margin: 0px;
 }
 
+.orientleft #shell {
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 160px 160px;
+}
+
+.orientright #shell {
+	-webkit-transform: rotate(90deg);
+	-webkit-transform-origin: 230px 230px;
+}
+
 /* section 1 -- #page1 */
 .horizonLine {
 	background-color: black;
@@ -31,7 +41,7 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 .starkName {
 	font-size: 6em;
 	text-align: center;
-	padding-left: 70px;
+	/*padding-left: 70px;*/
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -50,7 +60,8 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 .scrollDown {
 	position: absolute;
 	bottom: 50px;
-	left: 50%;
+	/*left: 50%;*/
+	right: 143px;
 	transform: translateX(-25%);
 	z-index: 100;
 }
@@ -80,7 +91,7 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .paragraph h1 {
 	color: #DDDBD1;
-	font-size: 5em;
+	font-size: 4em;
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -89,6 +100,13 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	font-size: 4.5em;
 	font-family: 'Nanum Myeongjo';
 	font-weight: 400;
+}
+
+.paragraph h3 {
+	color: white;
+	font-size: 3em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 200;
 }
 
 .paragraph p,
@@ -170,6 +188,7 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 	line-height: 200%;
 	vertical-align: middle;
 	background-color: black;
+	z-index: 100;
 }
 
 .newMessageBox a {
@@ -243,11 +262,23 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .para3 a img {
 	position: relative;
-    width: 65%;
-    max-width: 300px;
+    width: 50%;
+    max-width: 800px;
     left: 50%;
     transform: translateX(-50%);
     height: auto;
+}
+
+.banners img {
+	position: relative;
+    width: 55%;
+    max-width: 750px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banners:not(.web_1) img {
+    box-shadow: 0 3px 30px rgba(0, 0, 0, .75);
 }
 
 @media screen and (max-width: 640px) {

@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors:['page1', 'page2','page3',],
-		sectionsColor:['white', '#ADAFAA', '#8f918b'],
+		anchors:['page1', 'page2','page3','page4'],
+		sectionsColor:['white', '#AACAF9', 'white','#ADAFAA'],
 		menu: '#topElements',
 		navigation: true,
 		navigationPosition: 'right',
@@ -17,9 +17,36 @@ $(document).ready(function() {
 		$(this).animate({ bottom : 60 }).animate({ bottom : 50 });
 	});
 
+	screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 
+	if (screen.lockOrientationUniversal("landscape-primary")) {
+	  // orientation was locked
+	} else {
+	  // orientation lock failed
+	}
 
 });
+
+
+
+window.addEventListner('orientationchange', function(){
+	if(window.orientation == -90) {
+		document.getElementById('orient').className = 'orientright';
+	}
+
+	if(window.orientation == 90) {
+		document.getElementById('orient').className = 'orientleft';
+	}
+
+	if(window.orientation == 0) {
+		document.getElementById('orient').className = '';
+	}
+}, true);
+
+// function changeOrientation(event) {
+//     alert("Rotate");
+//     event.preventDefault();
+// }
 
 function layer_open(el){
 
