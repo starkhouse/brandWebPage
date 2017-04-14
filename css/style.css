@@ -97,14 +97,14 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .paragraph h2 {
 	color: white;
-	font-size: 4.5em;
-	font-family: 'Nanum Myeongjo';
+	font-size: 3em;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 400;
 }
 
 .paragraph h3 {
 	color: white;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 200;
 }
@@ -114,19 +114,19 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 .pop-layer ul,
 .pop-layer li {
 	color: black;
-	font-size: 1.8em;
+	font-size: 1.2em;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
 }
 
 .paragraph dt {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 400;
 }
 
 .paragraph dd {
-	font-size: 1.8em;
+	font-size: 1.2em;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
 
@@ -279,6 +279,15 @@ h1, h2, h3, h4, h5, h6, ul, li, body {
 
 .banners:not(.web_1) img {
     box-shadow: 0 3px 30px rgba(0, 0, 0, .75);
+}
+
+figure figcaption {
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
+
 }
 
 @media screen and (max-width: 640px) {
